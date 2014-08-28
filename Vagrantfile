@@ -17,4 +17,6 @@ Vagrant.configure("2") do |config|
     puppet.manifests_path = "manifests"
     puppet.options = ['--verbose']
   end
+
+  config.vm.synced_folder "src/", "/srv/src/"
 end
